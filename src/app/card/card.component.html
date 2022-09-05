@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="title has-text-centered">
+    <h1>
+      Typing Challange
+    </h1>
+  </div>
+  <div class="card-header">
+    <p [innerHtml]="character==' '?'&#160;':character" *ngFor="let character of getString(),let i =index " [id]="i.toString()" [ngClass]="classes[i]">
+
+    </p>
+  </div>
+  <div class="card-content">
+    <div class="media-content">
+
+    </div>
+    <div class="content">
+      <input type="text" class="input" (input)="checkInput($event)" placeholder="Text Here">
+    </div>
+  </div>
+  <div class="has-text-centered" *ngIf="succesful">
+      <h1>Succesful</h1>
+  </div>
+</div>

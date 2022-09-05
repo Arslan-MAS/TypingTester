@@ -1,0 +1,12 @@
+:host{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.centerCard{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width:100% ;
+}
